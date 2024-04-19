@@ -1,0 +1,66 @@
+# Завдання 1: Присвоїти двом змінним будь-які числові значення.
+variable1 = 10
+variable2 = -5
+
+
+# Завдання 2: Складіть чотири складних логічних вирази за допомогою оператора and і or.
+# Оператор and:
+complex_expr_and1 = (variable1 > 0) and (variable2 < 0)  # True and True
+complex_expr_and2 = (variable1 < 0) and (variable2 < 0)  # False and True
+complex_expr_and3 = (variable1 > 0) and (variable2 > 0)  # True and False
+complex_expr_and4 = (variable1 < 0) and (variable2 > 0)  # False and False
+
+# Оператор or:
+complex_expr_or1 = (variable1 > 0) or (variable2 < 0)    # True or True
+complex_expr_or2 = (variable1 < 0) or (variable2 < 0)    # False or True
+complex_expr_or3 = (variable1 > 0) or (variable2 > 0)    # True or False
+complex_expr_or4 = (variable1 < 0) or (variable2 > 0)    # False or False
+
+# Завдання 3: Спробуйте використати в складних логічних виразах роботу зі змінними рядкового типу.
+# Змінні рядкового типу
+str_variable1 = "Hello"
+str_variable2 = "World"
+
+# Оператор and з рядковими змінними
+complex_expr_and_string = (str_variable1 == "Hello") and (str_variable2 == "World")
+
+# Завдання 4: Напишіть програмний код, в якому в разі, якщо значення якоїсь змінної більше 0, виводилося б спеціальне повідомлення.
+if variable1 > 0:
+    print("Змінна variable1 більше за 0.")
+elif variable1 < 0:
+    print("Змінна variable1 менше за 0.")
+
+# Завдання 5: Вдоскональте попередній код за допомогою гілки else так, щоб в залежності від значення змінної, виводилася або 1, або -1.
+if variable1 > 0:
+    print(1)
+elif variable1 < 0:
+    print(-1)
+
+# Завдання 7: Напишіть програму за наступним описом:
+# a. двом змінним присвоюються числові значення;
+# b. якщо значення першої змінної більше другої, то знайти різницю значень змінних (відняти від першої другу), результат зв'язати з третьою змінною;
+# c. якщо перша змінна має менше значення, ніж друга, то третю змінну зв'язати з результатом суми значень двох перших змінних;
+# d. у всіх інших випадках, привласнити треті змінні значення першої змінної;
+# e. вивести значення третьої змінної на екран.
+variable1 = 10
+variable2 = 5
+variable3 = 0
+
+if variable1 > variable2:
+    variable3 = variable1 - variable2
+elif variable1 < variable2:
+    variable3 = variable1 + variable2
+else:
+    variable3 = variable1
+
+print("Значення третьої змінної:", variable3)
+
+# Завдання 8: За кодом пакету мобільного зв’язку вивести назву оператора.
+mobile_code = "(0)50"
+
+if mobile_code == "(0)50":
+    print("Vodafone")
+elif mobile_code == "(0)66":
+    print("Vodafone")
+# Додайте інші умови відповідно до кодів операторів мобільного зв'язку.
+
